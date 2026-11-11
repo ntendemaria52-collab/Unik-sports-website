@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | UniK Sports</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.gallery img {
+  width: 100%; height: 150px; object-fit: cover; border-radius: 6px;
+}
+.gallery div {
+  background: #d9e6dd; height: 150px; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center; color: #555;
+}
+.video-embed {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>University of Kisubi: UniK Sports</h1>
+    <p>sports.unik.ac.ug</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="championships.html">Championships</a>
+    <a href="results.html">Schedules &amp; Results</a>
+    <a href="teams.html">Teams &amp; Athletes</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+  <section class="card">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+      <img src="images/medal1.jfif" alt="Kisubi medalists">
+      <img src="images/medal2.jfif" alt="Kisubi medals">
+      <img src="images/8.jpeg" alt="Senior player">
+      <img src="images/11.jpeg" alt="Woodball opening">
+      <img src="images/11.jpeg" alt="Woodball open">
+      <img src="images/6.jpeg" alt="School students">
+    </div>
+    <div class="video-embed">
+  <blockquote class="tiktok-embed"
+    cite="https://www.tiktok.com/@university.of.kisubi/video/7705859716638919957"
+    data-video-id="7705859716638919957"
+    style="max-width: 605px; min-width: 325px;">
+    <section>
+      <a target="_blank" href="https://www.tiktok.com/@university.of.kisubi?refer=embed">@university.of.kisubi</a>
+    </section>
+  </blockquote>
+</div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 University of Kisubi. All rights reserved.
+</footer>
+
+</body>
+</html>
+<script async src="https://www.tiktok.com/embed.js"></script>
